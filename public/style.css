@@ -319,6 +319,7 @@ header {
     background-position: inherit;
     background-size: 75%;
     justify-content: center;
+    margin-top: 300px;
   }
   .Specifications .content li {
     font-size: 1.5rem;
