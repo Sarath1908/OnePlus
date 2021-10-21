@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+:root {
+  --main-color: #010103;
+  --black: #13131a;
+  --white: #fff;
+  --bg: #010103;
+  --red: red;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5rem;
+}
+body {
+  background: var(--white);
+}
+section {
+  padding: 2rem 7%;
+}
+.heading {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+.heading span {
+  color: red;
+  text-transform: uppercase;
+}
+header {
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header .logo img {
+  height: 6rem;
+}
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.9rem;
+  color: red;
+}
+.header .navbar a:hover {
+  color: var(--white);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+.header .icons div {
+  color: red;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.header .icons div:hover {
+  color: var(--white);
+}
+
+#menu-btn {
+  display: none;
+}
+
+.header .search-form {
+  position: absolute;
+  top: 115%;
+  right: 7%;
+  background: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.header .search-form.active {
+  transform: scaleY(1);
+}
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: red;
+  padding: 1rem;
+  text-transform: none;
+}
+
+.header .search-form label {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: var(--black);
+}
+
+.header .search-form label:hover {
+  color: var(--white);
+}
+
+.Home {
+ 
+  display: flex;
+  align-items: center;
+ 
+
+}
+.rightPic{
+  width:40%;
+  background: url(./Images/all_models.jpeg) no-repeat;
+  background-size: 100%;
+ 
+  float: right;
+  background-position: right;
+  height:100vh;
+}
+
+.Home .content {
+  max-width:60rem;
+  width:60%;
+}
+
+.Home .content h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: black;
+}
+
+.Home .content p {
+  font-size: 2rem;
+  font-weight: 100px;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: black;
+}
+
+.Specifications {
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+
+  margin-top: -18rem;
+}
+.rightSpecificationPic{
+    background: url(./Images/Blue.jpg) no-repeat;
+
+
+  background-position: right;
+  width:40%;
+  background-size: 100%;
+  height:100vh;
+  margin-top: 15px;
+  
+}
+.Specifications .content {
+  max-width: 100rem;
+  width:60%;
+}
+
+.Specifications .content li {
+  font-size: 2rem;
+  font-weight: 100px;
+  line-height: 1;
+  padding: 1rem 0;
+  color: black;
+}
+
+.Review .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.Review .box-container .box {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.Review .box-container .box p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: black;
+  padding: 2rem 0;
+}
+
+.About .heading-1 {
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+.heading-1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 3rem;
+}
+
+ .heading-1 span {
+  color: red;
+  text-transform: uppercase;
+}
+
+.About {
+  min-height: 50vh;
+  display: right;
+  align-items: flex-start;
+  background-color: black;
+}
+.About .content {
+  max-width: 50rem;
+}
+.About .content-1 p {
+  font-size: 1.5rem;
+  font-weight: 100px;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #fff;
+}
+.footerCopyrightText {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.About .footerCopyrightText span {
+  color: red;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+  }
+  .header .navbar.active {
+    right: 0;
+  }
+  .header .navbar a {
+    color: var(--red);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .header .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+  .Home {
+    background-position: inherit;
+    background-size: 75%;
+    justify-content: center;
+  }
+  .Home .content h1 {
+    font-size: 4.5rem;
+  }
+  .Home .content p {
+    font-size: 1.5rem;
+  }
+  .rightPic{
+    height:60vh;
+    background-color: transparent;
+  }
+  .rightSpecificationPic{
+  background-color: transparent;
+  height:60vh;
+  
+}
+  .Specifications {
+    background-position: inherit;
+    background-size: 75%;
+    justify-content: center;
+  }
+  .Specifications .content li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  
+}
+input{
+  font-size: large;
+}
+
+label{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+select{
+  color: black;
+}
+.rButton{
+  padding-left: 10px;padding-right: 10px; font-size:medium;margin-top: 10px;
+}
+
+.Phone {
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: 999999;
+}
+
+
+
+
+@keyframes example {
+  0%   { left:0px; top:15px;}
+  25%   { left:0px; top:15px;}
+  50%  { left:15px; top:15px;}
+  75%  { left:15px; top:15px;}
+  100% { left:0px; top:15px;}
+}
